@@ -21,13 +21,22 @@ import webbrowser
 import time
 
 
-default_description = "Thanks for watching. Please Subscribe."
+default_description = ""
 default_categoryId = "20"
+
+try:
+	f=open("constdesc.txt")
+	default_description=f.read()
+	f.close()
+except Exception as e:
+	default_description=""
+
 
 
 def credits():
-	pass
-
+	print("[~] Written by Teja Swaroop (https://techraj156.com)")
+	print("[~] Thanks to streamlink CLI (https://streamlink.github.io)")
+	print()
 
 
 def checks():
@@ -121,7 +130,7 @@ def main():
 		pass
 
 
-	op = input("[+] Upload to YouTube? (Y/n)")
+	op = input("[+] Upload to YouTube? (Y/n): ")
 
 	if op in ["Y","y",""]:
 		# Upload created clip to YT
@@ -146,7 +155,7 @@ def main():
 			yt_categoryId == default_categoryId
 
 
-		yt_description+="\n"+yt_credits
+		yt_description+="\n"+"Credits: \n"+yt_credits
 
 		print("[*] Uploading video to YouTube. This might take a while..be patient, do not close the script.")
 		videoId = ytupload_util.upload(filename, yt_title, yt_description, yt_tags, yt_categoryId, yt_privacyStatus)
