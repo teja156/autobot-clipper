@@ -152,7 +152,7 @@ def main():
 			yt_description = default_description
 
 		if yt_categoryId=="":
-			yt_categoryId == default_categoryId
+			yt_categoryId = default_categoryId
 
 
 		yt_description+="\n"+"Credits: \n"+yt_credits

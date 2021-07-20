@@ -96,7 +96,7 @@ def manual_upload():
         yt_description = default_description
 
     if yt_categoryId=="":
-        yt_categoryId == default_categoryId
+        yt_categoryId = default_categoryId
 
 
     yt_description+="\n"+yt_credits
