@@ -136,7 +136,7 @@ def main():
 		# Upload created clip to YT
 
 		yt_title = input("[+] Video Title: ")
-		yt_description = input("[+] Video Description (leave empty for default description)")
+		yt_description = input("[+] Video Description (leave empty for default description): ")
 		yt_tags = input("[+] Video Tags (seperated by comas): ")
 		yt_categoryId = input("[+] Category ID (Leave empty for Gaming): ")
 		yt_privacyStatus = input("[+] Privacy Status (public/private/unlisted): ")
