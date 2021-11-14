@@ -27,7 +27,7 @@ You need to first create an account on Google Cloud Platform in-order to use the
 6. Add the scope '**youtube.upload**', and then 'Save and Continue'
 7. Add the email address of the channel in 'Test Users' and Save.
 8.  Create Client ID (APIs & Services -> Credentials -> Create Credentials), select 'Oauth client ID', select type 'Web application'
-9.  Add an 'Authorized redirect URI' of '[http://localhost:8080/oauth2callback](http://localhost:8080/oauth2callback)'
+9.  Add an 'Authorized redirect URI' of '[https://localhost:8080/oauth2callback](http://localhost:8080/oauth2callback)'
 10.  Download the client secrets JSON file (click download icon next to newly created client ID) and save it as file  `client_secrets.json`  in the same directory as the script.
 
 ## Run
